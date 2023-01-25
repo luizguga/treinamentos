@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(30,30,30);
+            margin: 0;
+            height: 100vh;
+        }
+        header h1 {
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 10px;
+        }
+        main > article > a {
+            display: block;
+        }
+        main > article > h2 {
+            margin-top: 0;
+        }
+        main > article > p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+        aside > ul {
+            columns: 3;
+            list-style-position: inside;
+            padding: 0;
+        }
+        aside > ul > li {
+            font-family: monospace;
+            font-size: 1.2em;
+        }
+        footer {
+            margin-top: 10px;
+            text-align: center;
+            padding: 15px 0;
+            background-color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Links e Âncoras em HTML5</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Tipos de links</h2>
+
+            <h3>Link Interno</h3>
+            <p>Leva o visitante a outra página dentro do próprio site. Não é necessário indicar a URL completa nesses casos.</p>
+            <a href="#" target="_self" rel="next">link interno (para a próxima página do site)</a>
+            <a href="#" target="_self" rel="prev">link interno (para a página anterior do site)</a>
+
+            <h3>Link Externo</h3>
+            <p>Devemos indicar a URL completa, incluindo o protocolo http:// ou https:// e o caminho que leve à uma página específica.</p>
+            <a href="#" target="_blank" rel="author">link externo (site do autor de um artigo)</a>
+            <a href="#" target="_blank" rel="external">link externo (para outro site)</a>
+            <a href="#" target="_blank" rel="nofollow">link externo (para um site não endossado)</a>
+
+            <h3>Links para Download</h3>
+            <p>Basta fazer o link diretamente para o arquivo que se deseja efetuar o download e adicionar o atributo <strong>download</strong> com o valor configurado para o nome do arquivo a ser baixado e o atributo <strong>type</strong> para indicar ao navegador que tipo de arquivo está sendo baixado.</p>
+            <a href="arquivos/pacote-imagens-cap25.zip" download="pacote-imagens-cap25.zip" type="application.zip">link para download</a>
+            <aside>
+                <h4>Alguns media types mais usados</h4>
+                <ul type="square">
+                    <li>application/zip</li>
+                    <li>text/html</li>
+                    <li>text/CSS</li>
+                    <li>text/JavasScript</li>
+                    <li>video/mp4</li>
+                    <li>video/H264</li>
+                    <li>video/JPEG</li>
+                    <li>audio/aac</li>
+                    <li>audio/mpeg</li>
+                    <li>font/ttf</li>
+                    <li>image/jpeg</li>
+                    <li>image/png</li>
+                </ul>
+                <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Site com a lista oficial de Media Types</a>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>Site produzido por <a href="#">luizguga</a>&copy;</p>
+    </footer>
+</body>
+</html>

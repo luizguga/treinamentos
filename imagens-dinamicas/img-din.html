@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(30,30,30);
+            margin: 0;
+        }
+        header h1{
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+        main {
+            background-color: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;
+        }
+        main h2 {
+            margin-top: 0;
+        }
+        picture > img {
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 10px;
+        }
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Imagens dinâmicas</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Inserindo imagens dinâmicas</h2>
+            <picture>
+                <source media="(min-width:630px)" srcset="imagens/grande.jpg" type="image/jpeg">
+                <source media="(min-width:505px)" srcset="imagens/medio.jpg" type="image/jpeg">
+                <img src="imagens/pequeno.jpg" alt="Imagem de exemplo">
+            </picture>
+            <picture>
+                <source media="(max-width:505px)" srcset="imagens/pequeno.jpg" type="image/jpeg">
+                <source media="(max-width:630px)" srcset="imagens/medio.jpg" type="image/jpeg">
+                <img src="imagens/grande.jpg" alt="Imagem flexível">
+            </picture>
+        </article>
+    </main>
+    <footer>
+        <p>Site produzido por <a href="#">luizguga</a>&copy;</p>
+    </footer>
+</body>
+</html>

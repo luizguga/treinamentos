@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em HTML</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(30,30,30);
+            margin: 0;
+        }
+        header h1 {
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;
+            background-color: white;
+        }
+        main > ol, main > ul {
+            display: inline-block;
+        }
+        footer {
+            text-align: center;
+            margin: 0;
+            margin-top: 10px;
+            padding: 15px 0;
+            background-color: white;
+        }
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Listas em HTML</h1>
+    </header>
+    <main>
+        <h2>Listas ordenadas (Ordered lists)</h2>
+        <ol type="1">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+        <br>
+        <ol type="A">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+        <ol type="a">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+        <br>
+        <ol type="I">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+        <ol type="i">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+
+        <h2>Listas não ordenadas (Unordered lists)</h2>
+        <ul type="disc">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+        <br>
+        <ul type="square">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+        <ul type="circle">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <h2>Listas mistas e de Definição</h2>
+
+        <h3>Misturando listas</h3>
+        <ol type="1">
+            <li>item</li>
+            <ul type="square">
+                <li>subitem</li>
+                <li>subitem</li>
+                <li>subitem</li>
+            </ul>
+            <li>item</li>
+            <ul type="square">
+                <li>subitem</li>
+                <li>subitem</li>
+                <li>subitem</li>
+            </ul>
+        </ol>
+        <h3>Lista de Definições</h3>
+        <dl>
+            <dt>Basquete</dt>
+            <dd>Um esporte em que os atletas arremessam uma bola numa cesta para marcar pontos.</dd>
+            <dt>Futebol</dt>
+            <dd>Um esporte em que os atletas utilizando os pés chutam uma bola entre traves para marcar gols.</dd>
+        </dl>
+    </main>
+    <footer>
+        <p>Site produzido por <a href="#">luizguga</a>&copy;</p>
+    </footer>
+</body>
+</html>

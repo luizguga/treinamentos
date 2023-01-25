@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(30,30,30);
+    margin: 0;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+article > h2#ptitulo {
+    margin-top: 0;
+}
+table {
+    border-collapse: collapse;
+}
+table > caption {
+    font-weight: bold;
+}
+tr > td, tr > th {
+    border: 1px solid black;
+    padding: 10px;
+}
+table#tgrande {
+    font-size: 16px;
+}
+table#tgrande > caption {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+table#tgrande > thead {
+    position: sticky; /* Não funciona, pois o overlfow: auto; no ancestral interfere na rolagem do container que é uma caracerística essencial para o funcionamento de position: sticky; */
+    top: -1px;
+    background-color: rgb(187, 187, 187);
+}
+table#tgrande > tbody > tr:nth-child(even){
+    background-color: rgb(212, 212, 212);
+}
+footer {
+    background-color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+footer > p {
+    margin: 0;
+}
+@media screen and (max-width: 350px) {
+    table#tgrande {
+        font-size: 0.53em;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 410px) {
+    table#tgrande {
+        font-size: 0.71em;
+    }
+}
+@media screen and (min-width: 410px) and (max-width: 475px) {
+    table#tgrande {
+        font-size: 0.8em;
+    }
+}

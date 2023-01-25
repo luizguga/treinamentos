@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(30, 30, 30);
+        }
+        header h1 {
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 10px;
+        }
+        h2, h3, h4 {
+            margin: 10px 0;
+        }
+        p {
+            line-height: 1.3em;
+            margin: 5px 0;
+        }
+        code {
+            font-size: 1.2em;
+        }
+        article > p {
+            text-indent: 20px;
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header><!-- Tag semântica que define o cabeçalho do site -->
+        <h1>Semântica em HTML5</h1>
+    </header>
+    <main><!-- Tag semântica que define o conteúdo principal do site -->
+        <article><!-- Tag semântica que define um artigo do site -->
+            <h2>Tags Semânticas</h2>
+
+            <h3>Negrito e Itálico do jeito certo</h3>
+            <p>Existem as tags &lt;b&gt; e &lt;i&gt; para essa tarefa, mas elas não possuem significado e focam apenas na forma, sendo assim, hoje em dia passou-se a usar as tags <strong>&lt;strong&gt;</strong> e <em>&lt;em&gt;</em> para realizar essas mesmas formatações visuais, só que agora com sentido.</p>
+            <p>A tag <strong>&lt;strong&gt;</strong> significa que o termo delimitado possui força dentro da frase. Logo, ele aparecerá em <strong>negrito</strong>. A tag <em>&lt;em&gt;</em> significa que queremos dar ênfase ao termo. Logo, ele aprecerá em <em>itálico</em>.</p>
+
+            <h3>Texto marcado</h3>
+            <p>Serve para marcar uma parte do texto na qual se quer dar uma ênfase descomunal, já que se trata de um trecho muito valioso para você.</p>
+            <p>Para fazer essas marcas em HTML5, usamos a tag <mark>&lt;mark&gt;</mark> para delimitar o texto que queremos demarcar.</p>
+
+            <h3>Texto grande e pequeno</h3>
+            <p>A tag <big>&lt;big&gt;</big> (que deixava o texto maior) está depreciada pela HTML5, mas a tag <small>&lt;small&gt;</small> (que deixa o texto menor) segue firme e forte na vida da linguagem.</p>
+            <p>Isso pode ser, porquê letras pequenas em contratos, por exemplo, tem um significado de observações mais técnicas do contrato. Já as letras grandes não possuem significado algum, somente forma, e forma, fica a cargo das CSS.</p>
+
+            <h3>Texto deletado</h3>
+            <p>Antigamente existia a tag <strike>&lt;strike&gt;</strike>, que hoje também está depreciada pela última versão da HTML. No lugar dela entrou a tag <del>&lt;del&gt;</del>. que significa que o texto ali, pode até ser lido, mas deve ser desconsiderado pelo leitor.</p>
+
+            <h3>Texto inserido</h3>
+            <p>O texto inserido é o exato oposto do texto deletado que vimos anteriormente. Nesse caso se colocarmos um texto qualquer dentro de <ins>&lt;ins&gt;</ins>, estamos dizendo que o texto está ali, deve ser lido e você deve prestar atenção nele. É o que fazíamos anteriormente ao utilizar a tag <u>&lt;u&gt;</u> para sublinhar um texto.</p>
+
+            <h3>Texto Sobrescrito e Subscrito</h3>
+            <p>Quantas vezes você tentou escrever um X<sup>2</sup> ou um H<sub>2</sub>O em um documento e ficou na dúvida de como fazer para esses números ficarem pequeninos em cima ou embaixo. Para a HTML tem as tags &lt;sub&gt; (para subscrito) e &lt;sup&gt; (para sobrescrito).</p>
+
+            <h3>Citações e códigos</h3>
+            <h4>Trechos de códigos e Pré-formatação</h4>
+            <p>Nós somos programadores (ou seremos), e por isso compartilhamos muito código-fonte em diversas linguagens. Para isso, existe a tag <code>&lt;code&gt;</code> da HTML onde você pode delimitar seu código. A principal vantagem no uso dessa tag é o valor semântico que ela representa, indicando ao navegador que se trata de um código de computador. Porém, existe também um efeito visual, pois as letras ficam no modo mono-espaçadas (monospace), o que facilita bastante a leitura do código.</p>
+            <p>Você pode achar que o código vai aparecer formatado no seu site, porém o que acontece é uma simples mudança de letras. Para resolver esse problema, vamos usar uma outra tag HTML chamada <strong>&lt;pre&gt;</strong>, que mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e tabulações. Assim podemos usar as duas tags em combinação para exibir códigos em sites de maneira correta.</p>
+
+            <h4>Citações</h4>
+            <p>Normalmente, uma citação aparece entre aspas ou com as margens deslocadas em relação ao texto.</p>
+            <p>Para criar uma citação em HTML, podemos usar a tag <q>&lt;q&gt;</q> (do inglês quote, que significa citar). O texto que estiver entre <strong>&lt;q&gt; &lt;/q&gt;</strong> já vai receber automaticamente as aspas, mas não terá nenhum deslocamento. Essa técnica é mais usada queremos uma citação no meio de um parágrafo.</p>
+            <p>Também podemos criar citações mais longas (em bloco) e que tenham um parágrafo só para si. Nesse caso, colocaremos tudo dentro de <strong>&lt;blockquote&gt; &lt;/blockquote&gt;</strong> e o texto ganha um recuo automaticamente. Podemos também colocar um link para o texto original, usando o parâmetro <strong>cite</strong> dentro da tag.</p>
+
+            <h3>Abreviações</h3>
+            <p>Sempre que você quiser escrever uma sigla, mas deixar claro ao usuário (e aos mecanismos de busca) o significado dela, use a tag <strong>&lt;abbr&gt;</strong>. Use o parâmetro <strong>title</strong> para indicar o significado da sigla.</p>
+
+            <h3>Texto invertido (<bdo dir="rtl">Texto inverido</bdo>)</h3>
+            <p><code>&lt;bdo dir="rtl"&gt;(texto)&lt;/bdo&gt;</code></p>
+
+        </article>
+    </main>
+    <footer><!-- Tag semântica que define o rodapé do site -->
+        <p>Site produzido por <a href="#">luizguga</a>&copy;</p>
+    </footer>
+</body>
+</html>

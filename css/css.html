@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folhas de estilo</title>
+    <link rel="stylesheet" href="estilos/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>CSS (Cascading Style Sheets)</h1>
+    </header>
+    <main>
+        <article>
+            <h2 id="ptitulo">CSS inline</h2>
+            <p>É a técnica mais básica para aplicar estilos em áreas pontuais em nosso site, que é usando as CSS dentro de parâmetros de HTML5.</p>
+
+            <pre><code>&lt;body <mark>style="font-family: Arial,<wbr> Helvetica, sans-serif; color:<wbr> blue;"</mark>&gt;<br> &lt;h1 <mark>style="color: red;"</mark>&gt;<wbr>Capítulo 1&lt;/h1&gt;</code></pre>
+
+            <h2>CSS internal style</h2>
+            <p>Para aplicar estilos de forma mais dinâmica e prática, podemos adicionar uma tag <strong>&lt;style&gt;</strong> dentro da área <strong>&lt;head&gt;</strong></p>
+
+            <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"<wbr> content="width=device-width,<wbr> initial-scale=1.0"&gt;
+  &lt;title&gt;Estilos<wbr> internos&lt;/title&gt;
+<mark>  &lt;style&gt;
+    body {
+      font-family: Arial,<wbr> Heveltica, sans-serif;
+    }
+  &lt;/style&gt;</mark>
+&lt;/head&gt;</code></pre>
+
+            <h2>CSS external style</h2>
+            <p>Manter as folhas de estilo fora do código HTML, além de uma maior organização faz com que tudo seja reaproveiado de maneira mais eficiente nas outras páginas do nosso site. Para isso, utilizamos a tag <strong>&lt;link&gt;</strong> especialmente configurada para trabalhar com arquivos externos de estilo. Essa tag deve ser colocada dentro da área <strong>&lt;head&gt;</strong> do seu documento HTML.</p>
+
+            <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"<wbr> content="width=device-width,<wbr> initial-scale=1.0"&gt;
+  &lt;title&gt;CSS external&lt;/title&gt;
+  <mark>&lt;link rel="stylsheet"<wbr> href="style.css"&gt;</mark>
+&lt;/head&gt;</code></pre>
+
+            <p>Agora é só adicionar os seletores e todas as suas respectivas declarações nesse arquivo separado.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Site produzido por <a href="#">luizguga</a>&copy;</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    height: 90vh;
+    padding-top: 10vh;
+}
+
+div#relativa {
+    position: relative;
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    background: purple url('../imagens/target001.png') center center no-repeat;
+    background-size: 100% 100%;
+}
+div#absoluta {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background: yellow url('../imagens/target001.png') center center no-repeat;
+    background-size: 100% 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

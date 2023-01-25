@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios e Vídeos</title>
+    <link rel="stylesheet" href="estilos/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Áudios e Vídeos em HTML5</h1>
+    </header>
+    <main>
+        <article>
+            <h2 id="ptitulo">Inserindo Áudios em HTML5</h2>
+            <audio controls preload="metadata" autoplay loop>
+                <source src="arquivos/happy-mistake.mp3" type="audio/mp3">
+                <!--
+                    <source src="arquivos/happy-mistake.ogg" type="audio/ogg">
+                    <source src="arquivos/happy-mistake.wav" type="audio/wav">
+                -->
+                <p>Seu navegador não suporta a reprodução de áudios <a href="arquivos/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mp3">Clique aqui</a> para baixá-lo.</p>
+            </audio>
+
+            <h2>Inserindo Vídeos em HTML5</h2>
+            <div id="video-1">
+                <video controls preload="metadata" autoplay loop poster="arquivos/limoes-capa.png">
+                    <source src="arquivos/meu-video.mp4" type="video/mp4">
+                    <source src="arquivos/meu-video.m4v" type="video/mp4">
+                    <source src="arquivos/meu-video.ogv" type="video/ogg">
+                    <source src="arquivos/meu-video.webm" type="video/webm">
+                    <p>Seu navegador não suporta a reprodução de vídeo <a href="arquivos/meu-video.mp4" download="meu-video.mp4" type="video/mp4">Clique aqui</a> para baixá-lo.</p>
+                </video>
+            </div>
+
+            <h2>Incorporação de Vídeos externos</h2>
+            <p>O <strong>Youtube</strong> e o <strong>Vimeo</strong> são serviços de hospedagem de vídeos que vão evitar consumir nossos próprios recursos de host coontratado.</p>
+            <p>A principal vantagem do <strong>Youtube</strong> é que seus servidores são ultra rápidos. Mas no Youtube os vídeos ficam públicos e disponíveis, o que é uma desvantagem caso queira limitar quem vai ter acesso a determinado vídeo.</p>
+            <p>O <strong>Vimeo</strong> permite limitar quem vai poder ver o vídeo, o que é especialmente vantajoso para quem quer criar produtos em forma de vídeo. Como desvantagens desse serviços, ele é pago por uma taxa anual e seus algoritmos não são tão eficientes quanto os do Youtube, logo os vídeos apresentam pequenons travamentos.</p>
+            <p>Dica: Subir vídeos no formato <strong>m4v</strong> nesses serviços é o mais recomendado.</p>
+            <div id="video-2">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Site produzido por <a href="#">luizguga</a>&copy;</p>
+    </footer>
+</body>
+</html>
