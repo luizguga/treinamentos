@@ -3,7 +3,7 @@ const searchInput = document.querySelector('.output input');
 const searchButton = document.querySelector('.output button');
 
 searchInput.value = '';
-searchInput.focus;
+searchInput.focus();
 
 const myHistory = [];
 
@@ -22,5 +22,5 @@ searchButton.onclick = ()=>{
         list.appendChild(listItem);
     }
     searchInput.value = '';
-    searchInput.focus;
+    searchInput.focus();
 }
