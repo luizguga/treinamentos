@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 8px;
+}
+main {
+    max-width: 600px;
+    margin: auto;
+}
+main > div {
+    margin-bottom: 10px;
+}
+main > p {
+    background-color:#FFC125;
+    color: #5E2612;
+    text-align: justify;
+    padding: 5px;
+    visibility: hidden;
+}
